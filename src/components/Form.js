@@ -2,9 +2,9 @@ import React, { useContext } from 'react';
 import { CategorysContext } from '../context/CategorysContext';
 
 const Form = () => {
-
-  const {hello} = useContext(CategorysContext)
-  alert(hello);
+  //Destructuring de context
+  const {categorys} = useContext(CategorysContext);
+  console.log(categorys);
 
     return ( 
         <form className="col-12">
