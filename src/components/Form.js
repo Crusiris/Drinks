@@ -14,7 +14,7 @@ const Form = () => {
   //Destructuring de context
   const { categorys } = useContext(CategorysContext);
 
-  const { searchRecipes } = useContext(RecipesContext);
+  const { searchRecipes, saveQuery } = useContext(RecipesContext);
 
   //Funcion que obtiene busqueda
   const getsearch = e => {
@@ -31,7 +31,8 @@ const Form = () => {
         <form className="col-12"
         onSubmit={ e => {
             e.preventDefault();
-            searchRecipes(search)
+            searchRecipes(search);
+            saveQuery(true);
         }}
         >
 
