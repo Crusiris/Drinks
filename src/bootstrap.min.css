@@ -1,8 +1,20 @@
-*! * Bootswatch v4.4.1 * Homepage: https: //bootswatch.com
-* Copyright 2012-2019 Thomas Park * Licensed under MIT * Based on Bootstrap * //*!
-* Bootstrap v4.4.1 (https: //getbootstrap.com/)
-* Copyright 2011-2019 The Bootstrap Authors * Copyright 2011-2019 Twitter, Inc. * Licensed under MIT (https: //github.com/twbs/bootstrap/blob/master/LICENSE)
-*/@import url("https://fonts.googleapis.com/css?family=News+Cycle:400,700");
+/*!
+ * Bootswatch v4.4.1
+ * Homepage: https://bootswatch.com
+ * Copyright 2012-2019 Thomas Park
+ * Licensed under MIT
+ * Based on Bootstrap
+*/
+
+
+/*!
+ * Bootstrap v4.4.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+*/
+
+@import url("https://fonts.googleapis.com/css?family=News+Cycle:400,700");
 :root {
     --blue: #EB6864;
     --indigo: #6610f2;
@@ -34,7 +46,9 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box
 }
@@ -46,7 +60,16 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
     display: block
 }
 
@@ -72,7 +95,12 @@ hr {
     overflow: visible
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-top: 0;
     margin-bottom: 0.5rem
 }
@@ -82,7 +110,8 @@ p {
     margin-bottom: 1rem
 }
 
-abbr[title], abbr[data-original-title] {
+abbr[title],
+abbr[data-original-title] {
     text-decoration: underline;
     -webkit-text-decoration: underline dotted;
     text-decoration: underline dotted;
@@ -97,12 +126,17 @@ address {
     line-height: inherit
 }
 
-ol, ul, dl {
+ol,
+ul,
+dl {
     margin-top: 0;
     margin-bottom: 1rem
 }
 
-ol ol, ul ul, ol ul, ul ol {
+ol ol,
+ul ul,
+ol ul,
+ul ol {
     margin-bottom: 0
 }
 
@@ -119,7 +153,8 @@ blockquote {
     margin: 0 0 1rem
 }
 
-b, strong {
+b,
+strong {
     font-weight: bolder
 }
 
@@ -127,7 +162,8 @@ small {
     font-size: 80%
 }
 
-sub, sup {
+sub,
+sup {
     position: relative;
     font-size: 75%;
     line-height: 0;
@@ -163,7 +199,10 @@ a:not([href]):hover {
     text-decoration: none
 }
 
-pre, code, kbd, samp {
+pre,
+code,
+kbd,
+samp {
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 1em
 }
@@ -218,18 +257,24 @@ button:focus {
     outline: 5px auto -webkit-focus-ring-color
 }
 
-input, button, select, optgroup, textarea {
+input,
+button,
+select,
+optgroup,
+textarea {
     margin: 0;
     font-family: inherit;
     font-size: inherit;
     line-height: inherit
 }
 
-button, input {
+button,
+input {
     overflow: visible
 }
 
-button, select {
+button,
+select {
     text-transform: none
 }
 
@@ -237,26 +282,39 @@ select {
     word-wrap: normal
 }
 
-button, [type="button"], [type="reset"], [type="submit"] {
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
     -webkit-appearance: button
 }
 
-button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
     cursor: pointer
 }
 
-button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
     padding: 0;
     border-style: none
 }
 
-input[type="radio"], input[type="checkbox"] {
+input[type="radio"],
+input[type="checkbox"] {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0
 }
 
-input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"] {
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
     -webkit-appearance: listbox
 }
 
@@ -288,7 +346,8 @@ progress {
     vertical-align: baseline
 }
 
-[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
     height: auto
 }
 
@@ -323,34 +382,51 @@ template {
     display: none !important
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
     margin-bottom: 0.5rem;
     font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
     font-weight: 700;
     line-height: 1.1
 }
 
-h1, .h1 {
+h1,
+.h1 {
     font-size: 2.5rem
 }
 
-h2, .h2 {
+h2,
+.h2 {
     font-size: 2rem
 }
 
-h3, .h3 {
+h3,
+.h3 {
     font-size: 1.75rem
 }
 
-h4, .h4 {
+h4,
+.h4 {
     font-size: 1.5rem
 }
 
-h5, .h5 {
+h5,
+.h5 {
     font-size: 1.25rem
 }
 
-h6, .h6 {
+h6,
+.h6 {
     font-size: 1rem
 }
 
@@ -390,12 +466,14 @@ hr {
     border-top: 1px solid rgba(0, 0, 0, 0.1)
 }
 
-small, .small {
+small,
+.small {
     font-size: 80%;
     font-weight: 400
 }
 
-mark, .mark {
+mark,
+.mark {
     padding: 0.2em;
     background-color: #fcf8e3
 }
@@ -539,7 +617,11 @@ pre code {
     }
 }
 
-.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -548,25 +630,35 @@ pre code {
 }
 
 @media (min-width: 576px) {
-    .container, .container-sm {
+    .container,
+    .container-sm {
         max-width: 540px
     }
 }
 
 @media (min-width: 768px) {
-    .container, .container-sm, .container-md {
+    .container,
+    .container-sm,
+    .container-md {
         max-width: 720px
     }
 }
 
 @media (min-width: 992px) {
-    .container, .container-sm, .container-md, .container-lg {
+    .container,
+    .container-sm,
+    .container-md,
+    .container-lg {
         max-width: 960px
     }
 }
 
 @media (min-width: 1200px) {
-    .container, .container-sm, .container-md, .container-lg, .container-xl {
+    .container,
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl {
         max-width: 1140px
     }
 }
@@ -586,12 +678,82 @@ pre code {
     margin-left: 0
 }
 
-.no-gutters>.col, .no-gutters>[class*="col-"] {
+.no-gutters>.col,
+.no-gutters>[class*="col-"] {
     padding-right: 0;
     padding-left: 0
 }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12,
+.col,
+.col-auto,
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm,
+.col-sm-auto,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md,
+.col-md-auto,
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg,
+.col-lg-auto,
+.col-xl-1,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl,
+.col-xl-auto {
     position: relative;
     width: 100%;
     padding-right: 15px;
@@ -1829,7 +1991,8 @@ pre code {
     color: #222
 }
 
-.table th, .table td {
+.table th,
+.table td {
     padding: 0.75rem;
     vertical-align: top;
     border-top: 1px solid #dee2e6
@@ -1844,7 +2007,8 @@ pre code {
     border-top: 2px solid #dee2e6
 }
 
-.table-sm th, .table-sm td {
+.table-sm th,
+.table-sm td {
     padding: 0.3rem
 }
 
@@ -1852,15 +2016,20 @@ pre code {
     border: 1px solid #dee2e6
 }
 
-.table-bordered th, .table-bordered td {
+.table-bordered th,
+.table-bordered td {
     border: 1px solid #dee2e6
 }
 
-.table-bordered thead th, .table-bordered thead td {
+.table-bordered thead th,
+.table-bordered thead td {
     border-bottom-width: 2px
 }
 
-.table-borderless th, .table-borderless td, .table-borderless thead th, .table-borderless tbody+tbody {
+.table-borderless th,
+.table-borderless td,
+.table-borderless thead th,
+.table-borderless tbody+tbody {
     border: 0
 }
 
@@ -1873,11 +2042,16 @@ pre code {
     background-color: rgba(0, 0, 0, 0.075)
 }
 
-.table-primary, .table-primary>th, .table-primary>td {
+.table-primary,
+.table-primary>th,
+.table-primary>td {
     background-color: #f9d5d4
 }
 
-.table-primary th, .table-primary td, .table-primary thead th, .table-primary tbody+tbody {
+.table-primary th,
+.table-primary td,
+.table-primary thead th,
+.table-primary tbody+tbody {
     border-color: #f5b0ae
 }
 
@@ -1885,15 +2059,21 @@ pre code {
     background-color: #f6bfbe
 }
 
-.table-hover .table-primary:hover>td, .table-hover .table-primary:hover>th {
+.table-hover .table-primary:hover>td,
+.table-hover .table-primary:hover>th {
     background-color: #f6bfbe
 }
 
-.table-secondary, .table-secondary>th, .table-secondary>td {
+.table-secondary,
+.table-secondary>th,
+.table-secondary>td {
     background-color: #e7e7e7
 }
 
-.table-secondary th, .table-secondary td, .table-secondary thead th, .table-secondary tbody+tbody {
+.table-secondary th,
+.table-secondary td,
+.table-secondary thead th,
+.table-secondary tbody+tbody {
     border-color: lightgray
 }
 
@@ -1901,15 +2081,21 @@ pre code {
     background-color: #dadada
 }
 
-.table-hover .table-secondary:hover>td, .table-hover .table-secondary:hover>th {
+.table-hover .table-secondary:hover>td,
+.table-hover .table-secondary:hover>th {
     background-color: #dadada
 }
 
-.table-success, .table-success>th, .table-success>td {
+.table-success,
+.table-success>th,
+.table-success>td {
     background-color: #c1e9cd
 }
 
-.table-success th, .table-success td, .table-success thead th, .table-success tbody+tbody {
+.table-success th,
+.table-success td,
+.table-success thead th,
+.table-success tbody+tbody {
     border-color: #8cd7a2
 }
 
@@ -1917,15 +2103,21 @@ pre code {
     background-color: #aee2be
 }
 
-.table-hover .table-success:hover>td, .table-hover .table-success:hover>th {
+.table-hover .table-success:hover>td,
+.table-hover .table-success:hover>th {
     background-color: #aee2be
 }
 
-.table-info, .table-info>th, .table-info>td {
+.table-info,
+.table-info>th,
+.table-info>td {
     background-color: #c6d4e2
 }
 
-.table-info th, .table-info td, .table-info thead th, .table-info tbody+tbody {
+.table-info th,
+.table-info td,
+.table-info thead th,
+.table-info tbody+tbody {
     border-color: #95afca
 }
 
@@ -1933,15 +2125,21 @@ pre code {
     background-color: #b5c7d9
 }
 
-.table-hover .table-info:hover>td, .table-hover .table-info:hover>th {
+.table-hover .table-info:hover>td,
+.table-hover .table-info:hover>th {
     background-color: #b5c7d9
 }
 
-.table-warning, .table-warning>th, .table-warning>td {
+.table-warning,
+.table-warning>th,
+.table-warning>td {
     background-color: #fcf8c2
 }
 
-.table-warning th, .table-warning td, .table-warning thead th, .table-warning tbody+tbody {
+.table-warning th,
+.table-warning td,
+.table-warning thead th,
+.table-warning tbody+tbody {
     border-color: #faf28e
 }
 
@@ -1949,15 +2147,21 @@ pre code {
     background-color: #fbf5aa
 }
 
-.table-hover .table-warning:hover>td, .table-hover .table-warning:hover>th {
+.table-hover .table-warning:hover>td,
+.table-hover .table-warning:hover>th {
     background-color: #fbf5aa
 }
 
-.table-danger, .table-danger>th, .table-danger>td {
+.table-danger,
+.table-danger>th,
+.table-danger>td {
     background-color: #fcdab8
 }
 
-.table-danger th, .table-danger td, .table-danger thead th, .table-danger tbody+tbody {
+.table-danger th,
+.table-danger td,
+.table-danger thead th,
+.table-danger tbody+tbody {
     border-color: #faba7a
 }
 
@@ -1965,15 +2169,21 @@ pre code {
     background-color: #fbcda0
 }
 
-.table-hover .table-danger:hover>td, .table-hover .table-danger:hover>th {
+.table-hover .table-danger:hover>td,
+.table-hover .table-danger:hover>th {
     background-color: #fbcda0
 }
 
-.table-light, .table-light>th, .table-light>td {
+.table-light,
+.table-light>th,
+.table-light>td {
     background-color: #fdfdfe
 }
 
-.table-light th, .table-light td, .table-light thead th, .table-light tbody+tbody {
+.table-light th,
+.table-light td,
+.table-light thead th,
+.table-light tbody+tbody {
     border-color: #fbfcfc
 }
 
@@ -1981,15 +2191,21 @@ pre code {
     background-color: #ececf6
 }
 
-.table-hover .table-light:hover>td, .table-hover .table-light:hover>th {
+.table-hover .table-light:hover>td,
+.table-hover .table-light:hover>th {
     background-color: #ececf6
 }
 
-.table-dark, .table-dark>th, .table-dark>td {
+.table-dark,
+.table-dark>th,
+.table-dark>td {
     background-color: #c1c1c1
 }
 
-.table-dark th, .table-dark td, .table-dark thead th, .table-dark tbody+tbody {
+.table-dark th,
+.table-dark td,
+.table-dark thead th,
+.table-dark tbody+tbody {
     border-color: #8c8c8c
 }
 
@@ -1997,11 +2213,14 @@ pre code {
     background-color: #b4b4b4
 }
 
-.table-hover .table-dark:hover>td, .table-hover .table-dark:hover>th {
+.table-hover .table-dark:hover>td,
+.table-hover .table-dark:hover>th {
     background-color: #b4b4b4
 }
 
-.table-active, .table-active>th, .table-active>td {
+.table-active,
+.table-active>th,
+.table-active>td {
     background-color: rgba(0, 0, 0, 0.075)
 }
 
@@ -2009,7 +2228,8 @@ pre code {
     background-color: rgba(0, 0, 0, 0.075)
 }
 
-.table-hover .table-active:hover>td, .table-hover .table-active:hover>th {
+.table-hover .table-active:hover>td,
+.table-hover .table-active:hover>th {
     background-color: rgba(0, 0, 0, 0.075)
 }
 
@@ -2030,7 +2250,9 @@ pre code {
     background-color: #333
 }
 
-.table-dark th, .table-dark td, .table-dark thead th {
+.table-dark th,
+.table-dark td,
+.table-dark thead th {
     border-color: #464646
 }
 
@@ -2166,7 +2388,8 @@ pre code {
     opacity: 1
 }
 
-.form-control:disabled, .form-control[readonly] {
+.form-control:disabled,
+.form-control[readonly] {
     background-color: #eee;
     opacity: 1
 }
@@ -2176,7 +2399,8 @@ select.form-control:focus::-ms-value {
     background-color: #fff
 }
 
-.form-control-file, .form-control-range {
+.form-control-file,
+.form-control-range {
     display: block;
     width: 100%
 }
@@ -2216,7 +2440,8 @@ select.form-control:focus::-ms-value {
     border-width: 1px 0
 }
 
-.form-control-plaintext.form-control-sm, .form-control-plaintext.form-control-lg {
+.form-control-plaintext.form-control-sm,
+.form-control-plaintext.form-control-lg {
     padding-right: 0;
     padding-left: 0
 }
@@ -2237,7 +2462,8 @@ select.form-control:focus::-ms-value {
     border-radius: 0.3rem
 }
 
-select.form-control[size], select.form-control[multiple] {
+select.form-control[size],
+select.form-control[multiple] {
     height: auto
 }
 
@@ -2264,7 +2490,8 @@ textarea.form-control {
     margin-left: -5px
 }
 
-.form-row>.col, .form-row>[class*="col-"] {
+.form-row>.col,
+.form-row>[class*="col-"] {
     padding-right: 5px;
     padding-left: 5px
 }
@@ -2281,7 +2508,8 @@ textarea.form-control {
     margin-left: -1.25rem
 }
 
-.form-check-input[disabled] ~ .form-check-label, .form-check-input:disabled ~ .form-check-label {
+.form-check-input[disabled]~.form-check-label,
+.form-check-input:disabled~.form-check-label {
     color: #777
 }
 
@@ -2330,11 +2558,15 @@ textarea.form-control {
     border-radius: 0.25rem
 }
 
-.was-validated :valid ~ .valid-feedback, .was-validated :valid ~ .valid-tooltip, .is-valid ~ .valid-feedback, .is-valid ~ .valid-tooltip {
+.was-validated :valid~.valid-feedback,
+.was-validated :valid~.valid-tooltip,
+.is-valid~.valid-feedback,
+.is-valid~.valid-tooltip {
     display: block
 }
 
-.was-validated .form-control:valid, .form-control.is-valid {
+.was-validated .form-control:valid,
+.form-control.is-valid {
     border-color: #22B24C;
     padding-right: calc(1.5em + 0.75rem);
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2322B24C' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
