@@ -1,11 +1,30 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { CategorysContext } from '../context/CategorysContext';
 
+
 const Form = () => {
+
+    //State para la busqueda
+    const [ search, saveSearch ] = useState({
+        name: '',
+        category:''
+    })
+
+
   //Destructuring de context
   const {categorys} = useContext(CategorysContext);
-  console.log(categorys);
 
+  //Funcion que obtiene busqueda
+  const getsearch = e => {
+
+    saveSearch ({
+        ...search,
+        [e.target.name]:e.target.value
+    });
+
+  }
+  
+  
     return ( 
         <form className="col-12">
 
@@ -20,14 +39,26 @@ const Form = () => {
                     className="form-control"
                     type="text"
                     placeholder="Buscar por Ingrediente"
+                    onChange= {getsearch}
                     />
                 </div>
 
                 <div className="col-md-4">
                     <select 
-                    className="form-control"
-                    name="categoria">
-                        <option value="">---- Selecciona Categoria ----</option>
+                        className="form-control"
+                        name="category"
+                        onChange= {getsearch}>
+
+                            <option value="">---- Selecciona Categoria ----</option>
+
+                            {categorys.map(category=>(
+                                <option
+                                    key={category.strCategory}
+                                    value={category.strCategory}
+                                    >{category.strCategory}
+                                </option>  
+                            ))}
+
                     </select>
                 </div>
 
