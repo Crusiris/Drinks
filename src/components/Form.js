@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { CategorysContext } from '../context/CategorysContext';
-
+import { RecipesContext } from '../context/RecipesContext';
 
 const Form = () => {
 
@@ -12,7 +12,9 @@ const Form = () => {
 
 
   //Destructuring de context
-  const {categorys} = useContext(CategorysContext);
+  const { categorys } = useContext(CategorysContext);
+
+  const { searchRecipes } = useContext(RecipesContext);
 
   //Funcion que obtiene busqueda
   const getsearch = e => {
@@ -26,7 +28,12 @@ const Form = () => {
   
   
     return ( 
-        <form className="col-12">
+        <form className="col-12"
+        onSubmit={ e => {
+            e.preventDefault();
+            searchRecipes(search)
+        }}
+        >
 
             <fieldset className="text-center">
                 <legend>Buscar bebidas por Categoria o Ingredientes</legend>
