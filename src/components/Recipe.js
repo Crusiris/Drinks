@@ -22,7 +22,7 @@ function getModalStyle() {
 const useStyles = makeStyles((theme) => ({
     paper: {
       position: 'absolute',
-      width: 400,
+      width: 350,
       backgroundColor: theme.palette.background.paper,
       border: '2px solid #000',
       boxShadow: theme.shadows[5],
@@ -48,6 +48,20 @@ const Recipe = ({recipe}) => {
 
     //Extrayendo valores del Modalcontext
         const { drink, saveDrink, saveIdRecipe } = useContext(ModalContext);
+
+    //Mostrando y formateando ingredientes
+    const displayIngredient = (drink)=>{
+        let ingredient=[];
+        for (let i=1; i<16; i++){
+            if(drink[`strIngredient${i}`]){
+                ingredient.push(
+                    <li>{ drink[`strIngredient${i}`] } { drink[`strMeasure${i}`] } </li>
+                )
+            }
+        }
+        return ingredient;
+    }
+
 
     return ( 
         <div className="col-md-4 mb-3">
@@ -85,6 +99,11 @@ const Recipe = ({recipe}) => {
                                 </p>
 
                                 <img className="img-fluid my-4" src={drink.strDrinkThumb} alt={drink.strDrink}/>
+                       
+                                <h3>Ingredientes y cantidades</h3>
+                                <ul>
+                                    {displayIngredient(drink)}
+                                </ul>
                         </div>
                     </Modal>
 
