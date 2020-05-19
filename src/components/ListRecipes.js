@@ -1,6 +1,8 @@
 import React, { useContext} from 'react';
-import { RecipesContext } from '../context/RecipesContext'
-import Recipe from '../components/Recipe'
+import { RecipesContext } from '../context/RecipesContext';
+import Recipe from '../components/Recipe';
+
+
 const ListRecipes = () => {
 
     //Extraer las recetas del context
